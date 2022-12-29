@@ -19,7 +19,7 @@ use Illuminate\Support\Facades\Route;
 //Admin
 Route::post('/register', [AuthController::class, 'register']);
 Route::post('/login', [AuthController::class, 'login']);
-Route::post('/logout', [AuthController::class, 'logout']);
+Route::get('/logout', [AuthController::class, 'logout']);
 
 //Joueur
 Route::post('/joeur/register', [JoeurController::class, 'register']);
